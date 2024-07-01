@@ -18,10 +18,10 @@
             padding: 10px;
             margin: 5px;
             border: 1px solid black;
-            background-color: rgb(146, 66, 66);
+            cursor: pointer;
            
         }
-        .item.active {
+        .item.active, .item:hover {
             background-color: rgb(205, 249, 33);
         }
     </style>
@@ -36,7 +36,29 @@
         <div class = "item">5</div>
 
     </div>
+    <script type = "text/javascript">
+        var itemEls = document.querySelectorAll('.item');
+        console.log(itemEls);
+        for (var i = 0; i < itemEls.length; i++) {
+            var thisItem = itemEls[i];
+            console.log(thisItem);
+            thisItem.addEventListener('click', function() {
+                console.log(this);
+                var clieckedEl = this;
 
+                for (var j = 0; j < itemEls.length; j++) {
+                    var thisItem = itemEls[j];
+                    thisItem.classList.remove('active');
+                }
+
+                clieckedEl.classList.add('active');
+
+            });
+        }
+
+
+
+    </script>
 </body>
 
 </html>
