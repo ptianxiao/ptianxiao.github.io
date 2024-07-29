@@ -3,26 +3,49 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    overflow: hidden; /* Prevent body from scrolling */
+    height: 100vh; /* Full viewport height */
 }
 #sidebar {
     width: 100px;
     height: 100vh;
     background-color: #f8f8f8;
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
     transition: width 0.3s ease;
     overflow: hidden;
     color: rgb(22, 22, 22);
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
 }
 #sidebar:hover {
     width: 350px;
 }
+
+#content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow */
+}
+
 #content {
     flex-grow: 1;
     padding: 20px;
     transition: margin-left 0.3s ease;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow */
     
+}
+
+#pageTitle {
+    margin-top: 0;
+}
+
+.scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 20px; /* Add some padding for the scrollbar */
 }
 .nav-item {
     font-size: 18px;

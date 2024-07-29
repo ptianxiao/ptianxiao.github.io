@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,36 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <nav id="sidebar">
-        <div class="nav-item" data-page="home">Home</div>
-        <div class="nav-item" data-page="amphi-bloc">Amphi-Bloc</div>
-        <div class="nav-item" data-page="computer-vision">Computer Vision</div>
-        <div class="nav-item" data-page="voxel-agent">Voxel Agent</div>
-        <div class="nav-item" data-page="diffusion-agent">Diffusion Agent</div>
-        <div class="nav-item" data-page="llm-agent">LLM Agent</div>
-        <div class="nav-item" data-page="gh-plugin">GH-Plugin</div>
-        <div class="nav-item" data-page="about">About</div>
-    </nav>
-    <main id="content">
-        <h1 id="pageTitle">Welcome</h1>
-        <p id="pageContent">Hover over the navigation items to read them, and click to change pages.</p>
-    </main>
+    <div id="sidebar">
+        <nav id="sidebar">
+            <div class="nav-item" data-page="home">Home</div>
+            <div class="nav-item" data-page="amphi-bloc">Amphi-Bloc</div>
+            <div class="nav-item" data-page="computer-vision">Computer Vision</div>
+            <div class="nav-item" data-page="voxel-agent">Voxel Agent</div>
+            <div class="nav-item" data-page="diffusion-agent">Diffusion Agent</div>
+            <div class="nav-item" data-page="llm-agent">LLM Agent</div>
+            <div class="nav-item" data-page="gh-plugin">GH-Plugin</div>
+            <div class="nav-item" data-page="about">About</div>
+        </nav>
+    </div>
+    <div id="content-wrapper">
+        <div id="content" role="main">
+            <h1 id="pageTitle">Welcome</h1>
+            <div id="pageContent" class="scrollable-content">
+                <main id="content">
+                    <h1 id="pageTitle">Welcome</h1>
+                    <p id="pageContent">Hover over the navigation items to read them, and click to change pages.</p>
+                </main>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

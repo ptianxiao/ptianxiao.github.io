@@ -44,7 +44,7 @@ function setupNavItem(element) {
 function changePage(event) {
   const page = event.currentTarget.dataset.page;
   const pageTitle = document.getElementById('pageTitle');
-  const pageContent = document.getElementById('pageContent');
+  const pageContent = document.querySelector('.scrollable-content');
 
   // Update the title
   pageTitle.textContent = getPageTitle(page);
