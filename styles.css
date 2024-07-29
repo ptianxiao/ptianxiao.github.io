@@ -1,0 +1,58 @@
+body {
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#sidebar {
+    width: 100px;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    color: rgb(22, 22, 22);
+}
+#sidebar:hover {
+    width: 300px;
+}
+#content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    position: relative;
+    
+}
+.nav-item {
+    font-size: 18px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    position: relative;
+    height: 2em;
+    white-space: nowrap;
+    
+}
+.nav-item span {
+    position: absolute;
+    transition: all 0.5s ease;
+ 
+}
+.nav-item .first-letter {
+    font-weight: 700;
+}
+
+
+.josefin-sans-abc {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.rectangle {
+    position: absolute;
+    border: 2px solid #000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
