@@ -46,40 +46,37 @@ function changePage(event) {
   const pageTitle = document.getElementById('pageTitle');
   const pageContent = document.getElementById('pageContent');
 
-  switch(page) {
-      case 'home':
-          pageTitle.textContent = 'Home';
-          pageContent.textContent = 'Welcome to the home page!';
-          break;
-      case 'amphi-bloc':
-          pageTitle.textContent = 'Amphi-Bloc';
-          pageContent.textContent = 'Learn about Amphi-Bloc technology.';
-          break;
-      case 'computer-vision':
-          pageTitle.textContent = 'Computer Vision';
-          pageContent.textContent = 'Explore our computer vision capabilities.';
-          break;
-      case 'voxel-agent':
-          pageTitle.textContent = 'Voxel Agent';
-          pageContent.textContent = 'Discover our semantic agent technology.';
-          break;
-      case 'diffusion-agent':
-          pageTitle.textContent = 'Diffusion Agent';
-          pageContent.textContent = 'Learn about our diffusion agent.';
-          break;
-      case 'llm-agent':
-          pageTitle.textContent = 'LLM Agent';
-          pageContent.textContent = 'Explore our Language Model agent.';
-          break;
-      case 'gh-plugin':
-          pageTitle.textContent = 'GH-Plugin';
-          pageContent.textContent = 'Information about our Grasshopper plugin.';
-          break;
-      case 'about':
-          pageTitle.textContent = 'About';
-          pageContent.textContent = 'About me.';
-          break;
-  }
+  // Update the title
+  pageTitle.textContent = getPageTitle(page);
+
+  // Load and display the content
+  loadPageContent(page, pageContent);
+}
+
+function getPageTitle(page) {
+  const titles = {
+    'home': 'Home',
+    'amphi-bloc': 'Amphi-Bloc',
+    'computer-vision': 'Computer Vision',
+    'voxel-agent': 'Voxel Agent',
+    'diffusion-agent': 'Diffusion Agent',
+    'llm-agent': 'LLM Agent',
+    'gh-plugin': 'GH-Plugin',
+    'about': 'About'
+  };
+  return titles[page] || 'Page Not Found';
+}
+
+function loadPageContent(page, contentElement) {
+  fetch(`pages/${page}.html`)
+    .then(response => response.text())
+    .then(html => {
+      contentElement.innerHTML = html;
+    })
+    .catch(error => {
+      console.error('Error loading page content:', error);
+      contentElement.innerHTML = '<p>Error loading content. Please try again later.</p>';
+    });
 }
 
 const navItems = document.querySelectorAll('.nav-item');
