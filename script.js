@@ -59,8 +59,8 @@ function changePage(event) {
           pageTitle.textContent = 'Computer Vision';
           pageContent.textContent = 'Explore our computer vision capabilities.';
           break;
-      case 'semantic-agent':
-          pageTitle.textContent = 'Semantic Agent';
+      case 'voxel-agent':
+          pageTitle.textContent = 'Voxel Agent';
           pageContent.textContent = 'Discover our semantic agent technology.';
           break;
       case 'diffusion-agent':
