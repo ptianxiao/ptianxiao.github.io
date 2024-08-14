@@ -1,93 +1,204 @@
 body {
-    font-family: Josefin Sans, sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: "Space Grotesk", sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    overflow: hidden; /* Prevent body from scrolling */
-    height: 100vh; /* Full viewport height */
-}
-#sidebar {
-    width: 100px;
-    height: 100vh;
-    background-color: #f8f8f8;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: width 0.3s ease;
-    overflow: hidden;
-    color: rgb(41, 41, 41);
-    flex-shrink: 0; /* Prevent sidebar from shrinking */
-}
-#sidebar:hover {
-    width: 350px;
-}
-
-#content-wrapper {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Hide overflow */
+    color: #161616;
     
 }
 
-#content {
-    flex-grow: 1;
-    padding-top: 50px;
-    padding-left: 20px;
-    transition: margin-left 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Hide overflow */
+::selection {
+    color: rgb(255, 255, 255);
     
+    background: rgb(0, 0, 0);
+  }
+
+
+header {
+    background-color: #161616;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 5px;
 }
 
-#pageTitle {
-    margin-top: 0;
+h1{
+    font-size:xx-large;
+    font-weight: bolder;
 }
 
-.scrollable-content {
-    flex-grow: 1;
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-right: 20px; /* Add some padding for the scrollbar */
+
+
+.footnote{
+    font-size: small;
+    font-weight: lighter;
+    color: #161616;
 }
-.nav-item {
-    font-size: 18px;
-    margin-bottom: 40px;
-    cursor: pointer;
+
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
     position: relative;
-    height: 2em;
+    cursor: pointer;
+
+}
+
+model-viewer {
+    width: 800px;
+    height: 400px;
+    left: 15%;
+    max-width: 100%;
+    
+  }
+
+
+.logo-text {
+    font-weight: bold;
+    transition: opacity 1s ease;
+    padding-left: 10px;
+}
+
+.logo-hover {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 10px;
     white-space: nowrap;
-    filter: blur(3px);
-    transition: filter 0.5s ease;
+    opacity: 0;
+    transition: opacity 1s ease;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+
+
+.logo:hover .logo-text {
+    opacity: 0;
+}
+
+.logo:hover .logo-hover {
+    opacity: 1;
+}
+
+
+.container {
+    max-width: 1200px; /* You can adjust this value as needed */
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This spreads out the logo and menu */
+    align-items: center;
+    height: 20px;
+}
+.nav-menu {
+    display:flex;
+    gap: 20px;
+    padding-right: 10em;
+    padding-left: 10px;
     
 }
 
-.nav-item:hover {
-    filter: blur(0);
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;  /* This is needed for absolute positioning of pseudo-element */
+    padding-bottom: 5px; /* This creates space for the underline */
 }
 
-.nav-item span {
-    position: absolute;
-    transition: all 0.5s ease;
- 
+.nav-menu a:hover {
+    color: #ffffff;
 }
-.nav-item .first-letter {
-    font-weight: 900;
-    font-size: 1.5em;
-    color: #ce1515;
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* This matches the hover color you're using */
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 1280px;;
+}
+
+
+.no-scale {
+    width: 1px;
+}
+
+
+video{
+
+    max-width: 100%;
+    height: auto;
+    width: 1280px;;
+}
+
+iframe {
+    max-width: 100%;
+    width: 1280px;
+    height: 653px;
+
+}
+
+.Intro{
+    padding-top: 180px;
+    text-align: center;
+}
+
+.Intro-item{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.H-bloc, .Voxel, .about, .contact {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.H-bloc-item, .Voxel-item {
+    margin-bottom: 30px;
+}
+
+.Voxel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #161616;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    height: 150px;
+}
+
+.contact {
+    padding: 30px 30px 30px 30px;
+    text-align: center;
     
-}
-
-
-.josefin-sans-abc {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-.rectangle {
-    position: absolute;
-    border: 2px solid #000;
-    background-color: rgba(0, 0, 0, 0.1);
 }
