@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "README.md",
+      "assets/Peng_1.mp4",
+      "assets/Peng_2.mp4",
+      "assets/bloc1.glbbak"
+    ]
+  }
+}
