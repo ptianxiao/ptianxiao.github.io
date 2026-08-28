@@ -4,377 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homunculus Bloc — AI × AI</title>
-    <meta name="description"
-        content="Homunculus Bloc: a tangible design workflow where machine learning watches physical 3D-printed blocks, so architects can design with their hands. By Tianxiao Peng.">
-    <link rel="icon"
-        href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect x="3" y="3" width="26" height="26" fill="none" stroke="%23151512" stroke-width="2"/><rect x="11" y="11" width="12" height="12" fill="%23E03A17"/></svg>'>
-
+    <title>AIXAI</title>
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
 </head>
 
 <body>
+    <header>
+        <a href="#" class="logo">
+            <span class="logo-text">Homunculus Bloc</span>
+            <span class="logo-hover">Artificial Intelligence x Architectural Intelligence</span>
+        </a>
 
-    <nav class="topnav">
-        <a href="#top" class="brand">Homunculus&nbsp;Bloc</a>
-        <div class="topnav-links">
-            <a href="#exhibition"><span>01</span>Exhibition</a>
-            <a href="#intro"><span>02</span>Introduction</a>
-            <a href="#bloc"><span>03</span>The&nbsp;Bloc</a>
-            <a href="#voxel"><span>04</span>Voxel&nbsp;System</a>
-            <a href="#plugin"><span>05</span>Plugin</a>
-            <a href="#lineage"><span>06</span>Lineage</a>
-            <a href="#about"><span>07</span>About</a>
-        </div>
-    </nav>
+        <nav>
 
-    <!-- ======================= COVER SHEET ======================= -->
-    <header class="cover" id="top">
-        <div class="sheet-frame">
-            <div class="cover-main">
-                <div class="cover-title">
-                    <p class="eyebrow">AI&thinsp;×&thinsp;AI — Artificial Intelligence &times; Architectural
-                        Intelligence</p>
-                    <h1>Homunculus<br><em>Bloc</em></h1>
-                    <p class="thesis">A design workflow where machine learning lets the computer watch physical,
-                        3D-printed blocks — so architects keep designing with their hands, and the machine keeps up.</p>
-                    <p class="cover-q">“If we are not fully utilizing our hands, perhaps we are also not fully
-                        utilizing our brains.”</p>
-                </div>
-                <div class="cover-model">
-                    <model-viewer src="assets/bloc%20all.glb" alt="Interactive 3D model of the Homunculus Blocs"
-                        camera-controls auto-rotate touch-action="pan-y" disable-zoom></model-viewer>
-                    <p class="fig-tag"><b>Fig&nbsp;00</b>The blocs — drag to rotate</p>
-                </div>
+            <div class="nav-menu">
+                <a href="#Exhibition">Exhibition</a>
+                <a href="#Intro">Introduction</a>
+                <a href="#H-bloc">Homunculus' bloc</a>
+                <a href="#Voxel">Voxel System</a>
+                <a href="#GH">Grasshopper Plugin</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="cover-meta">
-                <div><span>Project</span>Homunculus Bloc</div>
-                <div><span>Drawn by</span>Tianxiao Peng, Architect</div>
-                <div><span>Medium</span>3D print · CV · WFC · Grasshopper</div>
-                <div><span>Sheet</span>00 of 07</div>
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <main>
+    <div class="container">
+        <!-- 
+        //    _                                                          _               
+        //   | |                                                        | |              
+        //   | |__     ___    _ __ ___    _   _   _ __     ___   _   _  | |  _   _   ___ 
+        //   | '_ \   / _ \  | '_ ` _ \  | | | | | '_ \   / __| | | | | | | | | | | / __|
+        //   | | | | | (_) | | | | | | | | |_| | | | | | | (__  | |_| | | | | |_| | \__ \
+        //   |_| |_|  \___/  |_| |_| |_|  \__,_| |_| |_|  \___|  \__,_| |_|  \__,_| |___/
+        //                                                                               
+        //                  
+        -->
+        <section id="Exhibition" class="Intro">
+            <h1>FINAL EXHIBITION</h1>
+            <div>
 
-        <!-- ======================= SHT 01 — FINAL EXHIBITION ======================= -->
-        <section class="sheet" id="exhibition">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 01</span>
-                <h2>Final Exhibition</h2>
-            </header>
-
-            <div class="prose">
-                <p>Two films made for the final exhibition of the research — the project, end to end.</p>
-            </div>
-
-            <figure class="figure figure--wide">
                 <video src="assets/Peng_1_web.mp4" controls preload="metadata" playsinline></video>
-                <figcaption class="fig-tag"><b>Fig&nbsp;01</b>Final exhibition film — part 1</figcaption>
-            </figure>
+                <p class = footnote>Final Exhibition Video — Part 1</p>
+            </div>
+            <div>
 
-            <figure class="figure figure--wide">
                 <video src="assets/Peng_2_web.mp4" controls preload="metadata" playsinline></video>
-                <figcaption class="fig-tag"><b>Fig&nbsp;02</b>Final exhibition film — part 2</figcaption>
-            </figure>
+                <p class = footnote>Final Exhibition Video — Part 2</p>
+            </div>
         </section>
 
-        <!-- ======================= SHT 02 — INTRODUCTION ======================= -->
-        <section class="sheet" id="intro">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 02</span>
-                <h2>Introduction</h2>
-            </header>
-
-            <div class="prose">
-                <p>Homunculus Bloc is a project designed to develop a workflow that employs machine learning to enable
-                    a computer to monitor physical, 3D-printed blocks. The system opens multiple ways of staying
-                    hands-on in the design process: architects intuitively manipulate the blocks, and the system
-                    converts those physical attributes into digital models — preserving the natural creativity of
-                    manual design while still drawing on computational power.</p>
-                <p>Computer-assisted design technologies are now so dominant that they greatly reduce the need for a
-                    designer's hands-on involvement. Architects reach for BIM, parametric modeling, procedural
-                    modeling, and generative AI to solve design problems. But does this evolution enhance architectural
-                    intelligence? Do we still need our hands to improve it?</p>
+        <section id="Intro" class="H-bloc">
+            <h1>INTRODUCTION</h1>
+            <div>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xL737XE9c8c?si=8vzm6a2egrSCxYTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class = footnote>H-bloc Demonstration</p>
             </div>
-
-            <div class="fig-row">
-                <figure class="figure">
-                    <div class="embed">
-                        <iframe src="https://www.youtube.com/embed/xL737XE9c8c?si=8vzm6a2egrSCxYTD"
-                            title="H-bloc demonstration" frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <figcaption class="fig-tag"><b>Fig&nbsp;03</b>H-bloc demonstration</figcaption>
-                </figure>
-                <figure class="figure">
-                    <div class="embed">
-                        <iframe src="https://www.youtube.com/embed/JGj_xInnKJw?si=gytWURGz6Cuq4tMG"
-                            title="H-bloc technology stack" frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <figcaption class="fig-tag"><b>Fig&nbsp;04</b>H-bloc technology stack</figcaption>
-                </figure>
+            <div>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JGj_xInnKJw?si=gytWURGz6Cuq4tMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class = footnote>H-bloc Technologies Stack</p>
             </div>
+            <div class="H-bloc-item">
+                <h2>Homunculus Bloc</h2>
 
-            <h3 class="sub">Why “homunculus”?</h3>
+                <p>
+                    Homunculus Bloc is a project designed to develop a
+                    workflow that employs machine learning to enable a computer to monitor physical 3D-printed blocks.
+                    This system facilitates multiple methods of hands-on involvement in the design process. Architects
+                    can intuitively manipulate the blocks, and the system will convert those physical attributes into
+                    digital models. This approach preserves the natural creativity of manual design while utilizing
+                    computational power.</p>
 
-            <div class="prose">
-                <p>The sensory (or motor) homunculus is a visual representation of how the brain perceives the body.
-                    Body parts are drawn in proportion to how much cortex is dedicated to them: the hands and lips
-                    appear enormous because they carry the most sensory nerve endings — the most brain power.</p>
-            </div>
+                <p>
+                    Computer-assisted design technologies are now so dominant that they greatly reduce the need for
+                    designers' hands-on involvement in the design process. Architects use a variety of advanced digital
+                    approaches (BIM, parametrical modeling, Procedural modeling, generative AI) to solve design
+                    problems. But does this evolution enhance architectural intelligence? Do we still need hands-on
+                    involvement to improve architectural intelligence?</p>
 
-            <div class="fig-row">
-                <figure class="figure">
-                    <img src="assets/Homonculus.png" alt="Diagram of the somatosensory and motor homunculus"
-                        loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;05</b>Cortical maps: the somatosensory and motor homunculus
-                    </figcaption>
-                </figure>
-                <figure class="figure figure--dark">
-                    <img src="assets/hOMUNCULUS.png" alt="Sensory homunculus sculptures by Sharon Price-James"
-                        loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;06</b>Sensory homunculus model by Sharon Price-James
-                    </figcaption>
-                </figure>
-            </div>
 
-            <div class="prose">
+
+
+                <img src="assets/Homonculus.png" alt="Homonculus">
+                <p class="Intro-item">The "sensory homunculus" or "motor homunculus" is a visual representation of the
+                    human body that illustrates how the brain perceives different parts of the body in terms of sensory
+                    input or motor control. In the sensory homunculus, body parts are depicted in proportion to how much
+                    sensory cortex is dedicated to them. For example, the hands and lips are shown much larger because
+                    they have more sensory nerve endings and thus more brain power dedicated to them. The same applies
+                    to the motor homunculus, which represents the brain's control over body movements.</p>
+
+
+
+                <img src="assets/hOMUNCULUS.png" alt="Homonculus">
+                <p class=footnote>Sensory homunculus model by Sharon Price-James. The cortical homunculus represents the
+                    area of the
+                    brain's cortex dedicated to sensory functions.</p>
+
                 <p>The rise of computers, smartphones, and touch screens has significantly decreased the practice of
-                    real-world, hands-on skills. We do almost everything virtually, on screens; our hands mostly tap
-                    keys and swipe glass, which reduces the stimulation reaching the sensorimotor cortex. If we are not
-                    fully utilizing our hands, perhaps we are also not fully utilizing our brains. What might the
-                    long-term effects be, on us and on our society?</p>
-            </div>
+                    real-world, hands-on skills. Nowadays, we do almost everything virtually, using computer screens. We
+                    primarily use our hands to tap keys and swipe screens, which has somewhat reduced the stimulation
+                    received by the sensory motor cortex. If we are not fully utilizing our hands, perhaps we are also
+                    not fully utilizing our brains. What might be the long-term effects of this on us and our society?
+                    As the old saying goes, "Use it or lose it." Only time will tell.</p>
 
-            <p class="pull">As the old saying goes — <em>use it or lose it.</em></p>
+
+
+
         </section>
 
-        <!-- ======================= SHT 03 — THE BLOC ======================= -->
-        <section class="sheet" id="bloc">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 03</span>
-                <h2>The Homunculus Bloc</h2>
-            </header>
+        <!-- 
+//    _                                                          _                   _       _                
+//   | |                                                        | |                 | |     | |               
+//   | |__     ___    _ __ ___    _   _   _ __     ___   _   _  | |  _   _   ___    | |__   | |   ___     ___ 
+//   | '_ \   / _ \  | '_ ` _ \  | | | | | '_ \   / __| | | | | | | | | | | / __|   | '_ \  | |  / _ \   / __|
+//   | | | | | (_) | | | | | | | | |_| | | | | | | (__  | |_| | | | | |_| | \__ \   | |_) | | | | (_) | | (__ 
+//   |_| |_|  \___/  |_| |_| |_|  \__,_| |_| |_|  \___|  \__,_| |_|  \__,_| |___/   |_.__/  |_|  \___/   \___|
+//                                                                                                            
+-->
 
-            <div class="prose">
-                <p>The Homunculus Bloc is a 3D-printable object made to be handled: it interlocks with other blocks
-                    and is shaped so a computer can efficiently track each block's unique ID, position, and
-                    orientation. Those attributes synchronize with the digital environment, so the computer is aware of
-                    hand interactions in real time.</p>
+        <section id="H-bloc" class="H-bloc">
+            <h1>Homunculus' Bloc</h1>
+
+            <p>
+                The Homunculus Block is a 3D-printable object that can interact with human hands and be interlockable
+                with other blocks. It is also designed to allow a computer to efficiently track their unique IDs,
+                positions, and orientations. These attributes are synchronized with the digital environment, so the
+                computer is aware of hand interactions in real-time.
+            </p>
+
+            <div>
+                <!-- Import the component -->
+                <!-- <model-viewer camera-controls touch-action="pan-y" disable-zoom src="assets/bloc1.glb" alt="A 3D model of an astronaut"></model-viewer> -->
+
+                <model-viewer camera-controls touch-action="pan-y" disable-zoom src="assets/bloc all.glb"
+                    alt="A 3D model of an astronaut"></model-viewer>
+
+            </div>
+            <div class="H-bloc-item">
+
             </div>
 
-            <h3 class="sub">Computer vision</h3>
-
-            <div class="prose">
-                <p>Synthetic data generated by the computer makes training cost-effective. The trained model lets the
-                    computer recognize the physical blocks in the real world.</p>
+            <div class="H-bloc-item">
+                <h2>Computer Vision</h2>
+                <p>Synthetic data that generated by computers is cost-effective for machine learning and computer vision
+                    processes. The trained model enables the computer to recognize the target object in the physical
+                    world.</p>
             </div>
 
-            <figure class="figure figure--wide">
-                <video src="assets/P-Block.mp4" controls loop muted playsinline></video>
-                <figcaption class="fig-tag"><b>Fig&nbsp;07</b>The machine learning process, illustrated</figcaption>
-            </figure>
 
-            <figure class="figure figure--wide">
-                <img src="assets/nn.jpg" alt="A fully connected neural network drawn as fine line work" loading="lazy">
-                <figcaption class="fig-tag"><b>Fig&nbsp;08</b>The machine's own homunculus: a neural network, drawn
-                    line by line</figcaption>
-            </figure>
+            <div>
+                <video src="assets/P-Block.mp4" controls autoplay loop muted onmouseover="this.controls=false"></video>
+                <p class=footnote>An illustration of the machine learning process.</p>
 
-            <div class="prose">
-                <p>The video below shows the result: the digital modeling environment captures attributes from the
-                    physical blocks, then generates input for a diffusion model, which turns the arrangement into
-                    images.</p>
             </div>
 
-            <figure class="figure figure--wide">
-                <div class="embed">
-                    <iframe src="https://www.youtube.com/embed/L1v9sZLn3c8?si=nufwl8QdIUbZ-2F3"
-                        title="Training results" frameborder="0" allow="encrypted-media"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <figcaption class="fig-tag"><b>Fig&nbsp;09</b>Blocks → digital model → diffusion imagery</figcaption>
-            </figure>
+
+            <div>
+                <p>The video below demonstrates the results achieved by this technology. The digital modeling
+                    environment captures attributes from the blocks and then generates input for the diffusion model to
+                    create images from it.</p>
+
+                <iframe
+                    src="https://www.youtube.com/embed/L1v9sZLn3c8?si=nufwl8QdIUbZ-2F3&amp;controls=0&autoplay=1&loop=1"
+                    frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+                <p class=footnote>An Illustration of the training results.</p>
+            </div>
+
         </section>
 
-        <!-- ======================= SHT 04 — VOXEL SYSTEM ======================= -->
-        <section class="sheet" id="voxel">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 04</span>
-                <h2>Voxel System</h2>
-            </header>
 
-            <div class="prose">
-                <p>Adding a semantic, color-coded layer to the traditional Wave Function Collapse (WFC) method makes
-                    its results interactively controllable — turning WFC into a design tool. The key is a 3D voxel
-                    meta-structure that stores semantic attributes in each voxel's color, value, and tensor
-                    information; the algorithm then links meta-tiles to detailed tiles in real time.</p>
+
+        <section id="Voxel" class="Voxel">
+            <h1>Voxel System</h1>
+            <p>I found that if I can add a sementic color-coded system to the traditional Wave Function Collapse (WFC)
+                method, it allows me to interactively control the results of WFC, potentially turning it into an
+                interactive design tool. The key is to create a 3D voxel meta-structure that stores semantic attributes
+                using color, value, and tensor information of the voxel. The algorithm then link the meta-tile to
+                detailed tiles in real-time.</p>
+
+            <div class="Voxel-item">
+                <image src="assets/image.png" style="width: 706px" alt="Homonculus">
+                    <p class="footnote"> Color Voxel System </p>
+                    <img src="assets\PH3.png" style="width: 706px" alt="Project 2">
+                    <p class="footnote"> Color Voxel System in 3D View </p>
+
+                    <p>In 3D Wave Function Collapse (WFC), a voxel has 26 possible neighboring positions, leading to
+                        2^26 potential neighbor configurations, which is an extremely large number. To manage this
+                        complexity, consider the moon's phases as an analogy: just as the elliptical phase is the most
+                        common moon phase, most voxel neighbors have common patterns. Similar to the regularity of a
+                        full moon occurring every month, some voxel neighbor configurations are less frequent but still
+                        predictable. Additionally, there are rare events like the supermoon, blue moon, and harvest
+                        moon, which represent the least common voxel neighbor configurations.</p>
+                    <image class="no-scale" src="assets/26Neighbors.png" style="width: 706px" alt="Homonculus">
+                        <p class="footnote"> The 26 neighbors of a voxel </p>
+
+                        <img src="assets\Changes.png" style=" max-width: 300px" alt="moons">
+
+                        <p class="footnote"> Possibilities of neighbor-conditions </p>
+
+                        <img src="assets\Moons.jpg" style=" max-width: 602px" alt="moons">
+
+                        <p class="footnote"> The 26 neighbors of a voxel </p>
+
+
+                        <p>The video below shows the voxel sculpting tool (WIP), allowing designers to intuitively
+                            control the voxel appearance with multiple sets of semantic WFC modules.</p>
+
+                        <iframe src="https://www.youtube.com/embed/H6aqc9BjUYY?si=B-xdrZvG2pJ4C8G5&autoplay=1&loop=1"
+                            frameborder="0" allow="autoplay; encrypted-media"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+
+
+
+                        <h3>Renderings</h3>
             </div>
+            
 
-            <div class="fig-row">
-                <figure class="figure figure--dark">
-                    <img src="assets/image.png" alt="Color-coded voxel plan" loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;10</b>Color voxel system, in plan</figcaption>
-                </figure>
-                <figure class="figure">
-                    <img src="assets/PH3.png" alt="Color voxel system in a 3D view" loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;11</b>Color voxel system, in 3D</figcaption>
-                </figure>
-            </div>
 
-            <h3 class="sub">Taming 2<sup>26</sup> neighbors</h3>
-
-            <div class="prose">
-                <p>In 3D Wave Function Collapse, a voxel has 26 possible neighboring positions — 2<sup>26</sup>
-                    potential neighbor configurations, an extremely large number. The moon's phases are a useful
-                    analogy for managing that complexity: just as the elliptical phase is the most common, most voxel
-                    neighborhoods follow common patterns. Like the full moon arriving every month, some configurations
-                    are less frequent but still predictable. And there are rare events — the supermoon, the blue moon,
-                    the harvest moon — the least common neighborhoods of all.</p>
-            </div>
-
-            <figure class="figure figure--wide">
-                <img src="assets/26Neighbors.png" alt="Diagram of the 26 neighbors of a voxel" loading="lazy">
-                <figcaption class="fig-tag"><b>Fig&nbsp;12</b>The 26 neighbors of a voxel</figcaption>
-            </figure>
-
-            <div class="fig-row">
-                <figure class="figure figure--pad">
-                    <img src="assets/Changes.png" alt="2^26 = 67,108,864 configurations" loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;13</b>Possibilities of neighbor conditions</figcaption>
-                </figure>
-                <figure class="figure figure--dark">
-                    <img src="assets/Moons.jpg" alt="A grid of moon phases" loading="lazy">
-                    <figcaption class="fig-tag"><b>Fig&nbsp;14</b>Phases of the moon: common, periodic, and rare
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="prose">
-                <p>The voxel sculpting tool below (work in progress) lets designers intuitively shape the voxel field
-                    with multiple sets of semantic WFC modules.</p>
-            </div>
-
-            <figure class="figure figure--wide">
-                <div class="embed">
-                    <iframe src="https://www.youtube.com/embed/H6aqc9BjUYY?si=B-xdrZvG2pJ4C8G5"
-                        title="Voxel sculpting tool" frameborder="0" allow="encrypted-media"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <figcaption class="fig-tag"><b>Fig&nbsp;15</b>Voxel sculpting with semantic WFC modules</figcaption>
-            </figure>
+            <!-- More portfolio items -->
         </section>
 
-        <!-- ======================= SHT 05 — GRASSHOPPER PLUGIN ======================= -->
-        <section class="sheet" id="plugin">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 05</span>
-                <h2>AI&thinsp;×&thinsp;AI Grasshopper Plugin</h2>
-            </header>
 
-            <div class="prose">
-                <p>Grasshopper is the user interface that brings these technologies together: block tracking, voxel
-                    sculpting, delegates, point clouds, diffusion agents, and WFC part-making live as components inside
-                    the Rhino environment, intuitively driving the attributes of the voxel system.</p>
-            </div>
+        <section id="GH" class="about">
+            <h1>AIxAI Grasshopper Plugin</h1>
+            <p>Use Grasshopper as the user interface to employ the technologies mentioned above. This involves using a
+                3D voxel sculpting tool within the Rhino environment, which intuitively changes the attributes in the
+                voxel system.</p>
 
-            <figure class="figure figure--wide figure--pad">
-                <img src="assets/GrasshopperPlugin.png"
-                    alt="The AIXAI Grasshopper toolbar with annotated component groups" loading="lazy">
-                <figcaption class="fig-tag"><b>Fig&nbsp;16</b>The plugin toolbar: camera tracking, H-bloc delegates,
-                    voxel sculpting, diffusion agent, WFC parts</figcaption>
-            </figure>
+            <img src="assets\GrasshopperPlugin.png" alt="Project 2">
 
-            <figure class="figure figure--wide">
-                <div class="embed">
-                    <iframe src="https://www.youtube.com/embed/Io0Cp6axjHM?si=9GkqSlukKSBEY9cm"
-                        title="AIXAI Grasshopper plugin demonstration" frameborder="0" allow="encrypted-media"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <figcaption class="fig-tag"><b>Fig&nbsp;17</b>The plugin at work</figcaption>
-            </figure>
+            <iframe src="https://www.youtube.com/embed/Io0Cp6axjHM?si=9GkqSlukKSBEY9cm&autoplay=1&loop=1"
+                            frameborder="0" allow="autoplay; encrypted-media"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
         </section>
 
-        <!-- ======================= SHT 06 — LINEAGE ======================= -->
-        <section class="sheet" id="lineage">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 06</span>
-                <h2>Lineage</h2>
-            </header>
+        <section id="about" class="about">
+            <h2>About Me</h2>
 
-            <div class="prose">
-                <p>The voxel field has ancestors. Superstudio's <em>Continuous Monument</em> and
-                    <em>Supersurface</em> (1966–1978) imagined the grid as an infinite, neutral field for life — an
-                    architecture reduced to a lattice that people inhabit through their own acts. The Homunculus Bloc
-                    borrows that field and hands it back to the fingertips.</p>
-            </div>
+            <p>Tianxiao Peng is a California licensed architect with 15 years of professional experience, specializing
+                in innovative design using open source tools. He has extensive experience with Grasshopper scripting (12
+                years) and Python programming (10 years) and is currently developing a Grasshopper plugin in C#.
+                Tianxiao holds a Master of Science from SCI-Arc and a Master of Architecture degree from Ball State
+                University. He is committed to leveraging technology's profound impact on architecture and society.</p>
 
-            <div class="strip">
-                <figure class="strip-item">
-                    <img src="assets/Grid1.png" alt="Superstudio: a gridded beach with figures" loading="lazy">
-                    <figcaption class="fig-tag">Superstudio, <i>Supersurface</i> studies</figcaption>
-                </figure>
-                <figure class="strip-item">
-                    <img src="assets/Grid2.png" alt="Superstudio: a glowing gridded plane at sunset" loading="lazy">
-                    <figcaption class="fig-tag">The grid as a field for life</figcaption>
-                </figure>
-                <figure class="strip-item">
-                    <img src="assets/11_splendid_houses.jpg" alt="Superstudio: gridded towers drawing" loading="lazy">
-                    <figcaption class="fig-tag">Gridded monuments, inhabited</figcaption>
-                </figure>
-                <figure class="strip-item">
-                    <img src="assets/Grid3.jpg" alt="Superstudio collage: a figure resting in a gridded room"
-                        loading="lazy">
-                    <figcaption class="fig-tag">Life on the lattice</figcaption>
-                </figure>
-                <figure class="strip-item">
-                    <img src="assets/Grid4.jpg" alt="Cover of Superstudio: Opere 1966–1978" loading="lazy">
-                    <figcaption class="fig-tag"><i>Superstudio: Opere 1966–1978</i>, ed. G. Mastrigli</figcaption>
-                </figure>
-            </div>
         </section>
 
-        <!-- ======================= SHT 07 — ABOUT ======================= -->
-        <section class="sheet" id="about">
-            <header class="sheet-head">
-                <span class="sheet-no">Sht 07</span>
-                <h2>About</h2>
-            </header>
+    </div>
 
-            <div class="prose">
-                <p>Tianxiao Peng is a California-licensed architect with 15 years of professional experience,
-                    specializing in innovative design using open-source tools. He has 12 years of Grasshopper scripting
-                    and 10 years of Python programming behind him, and is currently developing a Grasshopper plugin in
-                    C#. Tianxiao holds a Master of Science from SCI-Arc and a Master of Architecture from Ball State
-                    University. He is committed to leveraging technology's profound impact on architecture and
-                    society.</p>
-            </div>
-        </section>
-
-    </main>
 
     <footer class="contact">
-        <div class="contact-inner">
-            <p class="contact-lead">Let's build with our hands.</p>
-            <div class="contact-links">
-                <a href="mailto:pengtianxiao@gmail.com">pengtianxiao@gmail.com</a>
-                <a href="tel:+16266880979">(+1) 626 688 0979</a>
-            </div>
-            <p class="fig-tag contact-colophon"><b>End of set</b>Homunculus Bloc · Tianxiao Peng</p>
-        </div>
+        <h2>Contact Me</h2>
+        <p>Email: pengtianxiao@gmail.com</p>
+        <p>Phone: (+1) 626 688 0979</p>
+
     </footer>
 
     <script src="script.js"></script>
