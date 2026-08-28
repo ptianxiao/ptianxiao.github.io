@@ -8,7 +8,7 @@
 
 [**🌐 Project Page**](https://ptianxiao.github.io) · [**🎬 Demo Video**](https://youtu.be/xL737XE9c8c) · [**⚙️ Technology Stack**](https://youtu.be/JGj_xInnKJw) · [**📧 Contact**](mailto:pengtianxiao@gmail.com)
 
-**🎥 Final exhibition films:** [Part 1](assets/Peng_1_web.mp4) · [Part 2](assets/Peng_2_web.mp4) — playable on the [project page](https://ptianxiao.github.io#exhibition)
+**🎥 Final exhibition films:** [Part 1](assets/Peng_1_web.mp4) · [Part 2](assets/Peng_2_web.mp4) — playable on the [project page](https://ptianxiao.github.io)
 
 ![Color voxel system in a 3D view](assets/PH3.png)
 
